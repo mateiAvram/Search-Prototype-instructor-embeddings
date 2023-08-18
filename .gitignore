@@ -1,3 +1,3 @@
-/.venv/src/chromadb
-/.venv/src/data
-/.venv/src/embeddings
+src/chromadb
+src/data
+src/embeddings
