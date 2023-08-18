@@ -1,5 +1,3 @@
-# OPEN_AI_KEY = "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"
-
 import lancedb
 
 from langchain.vectorstores import LanceDB
