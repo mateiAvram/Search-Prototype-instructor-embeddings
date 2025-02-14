@@ -11,7 +11,7 @@ from business.lanceClient import lanceClient
 
 app = Flask(__name__)
 CORS(app)
-# api = Api(app, version='1.0', title='TaskLight Assistant API', description='API documentation using Swagger')
+# api = Api(app, version='1.0', title='Search Assistant API', description='API documentation using Swagger')
 
 def to_json(O: any):
     json_str = json.dumps(O.__dict__)
