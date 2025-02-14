@@ -1,4 +1,4 @@
-# tasklight-instructor-embeddings
+# Search-Prototype-instructor-embeddings
 
 ### Python packages requirements
 * langchain
@@ -11,6 +11,6 @@
 * flask_cors
 
 ### Instructions
-1. Place FRDs folder into src directory
+1. Place Documents folder into src directory
 2. Run docs_embeddings.py (approx. 30 min)
 3. Run query_docs.py
