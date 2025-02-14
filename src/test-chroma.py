@@ -26,7 +26,7 @@ ef = HuggingFaceInstructEmbeddings()
 # string = "hello world"
 # embeddings_list = ef.embed_query(string)
 
-vectorstore = Chroma(persist_directory='chromadb', collection_name='task_light_documents', embedding_function= ef)
+vectorstore = Chroma(persist_directory='chromadb', collection_name='documents', embedding_function= ef)
 
 length_function = len
 
