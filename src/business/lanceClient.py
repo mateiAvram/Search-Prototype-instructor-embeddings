@@ -6,7 +6,7 @@ class lanceClient:
     def __init__(self):
         ef = HuggingFaceInstructEmbeddings()
         db = lancedb.connect('lancedb/')
-        table = db.open_table('task_light_documents')
+        table = db.open_table('documents')
         self.vectorstore = LanceDB(connection=table, embedding=ef)
 
     def search(self, query):
