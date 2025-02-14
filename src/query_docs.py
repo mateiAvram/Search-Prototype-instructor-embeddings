@@ -23,7 +23,7 @@ def open_docx_with_default_app(file_path):
         print("Error: Could not open the file.")
 
 ef = HuggingFaceInstructEmbeddings()
-vectorstore = Chroma(persist_directory='embeddings', collection_name='tasklight', embedding_function=ef)
+vectorstore = Chroma(persist_directory='embeddings', collection_name='documents', embedding_function=ef)
 
 query = str(input('Search: '))
 
