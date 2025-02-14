@@ -15,15 +15,15 @@ ef = HuggingFaceInstructEmbeddings()                  # Works very well
 # ef = TensorflowHubEmbeddings()                        # Works
 
 # db = lancedb.connect('lancedb/')
-# table = db.open_table('task_light_documents')
-# table = db.open_table('task_light_documents_spacy')
-# table = db.open_table('task_light_documents_hf_embeddings')
-# table = db.open_table('task_light_documents_openai')
-# table = db.open_table('task_light_documents_tensorhub')
+# table = db.open_table('documents')
+# table = db.open_table('documents_spacy')
+# table = db.open_table('documents_hf_embeddings')
+# table = db.open_table('documents_openai')
+# table = db.open_table('documents_tensorhub')
 
 # vectorstore = LanceDB(connection=table, embedding=ef)
 
-vectorstore = Chroma(persist_directory='chromadb', collection_name='task_light_documents', embedding_function=ef)
+vectorstore = Chroma(persist_directory='chromadb', collection_name='documents', embedding_function=ef)
 
 query = str(input('Search: '))
 results = vectorstore.similarity_search(query=query)
