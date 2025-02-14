@@ -1,4 +1,4 @@
-docs_path = 'FRDs/'
+docs_path = 'documents/'
 
 from docx import Document
 import re
